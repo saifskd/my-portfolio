@@ -59,6 +59,10 @@ header ul li a{
      color: gray;
 }
 
+.call_none{
+    display: none;
+}
+
 .home_page{
 display: flex;
 justify-content: space-around;
@@ -494,6 +498,10 @@ header img{
     header ul li {
     font-size: 10px;
     margin-left: 4px;
+}
+
+.call_none{
+    display: block;
 }
 
     .home_page{
