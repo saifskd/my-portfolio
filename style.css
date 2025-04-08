@@ -219,6 +219,13 @@ margin: 10px;
 
 .view_more summary{
         margin-bottom: 50px;
+        font-size: 20px;
+        color: gray;
+        transition: all .4s ease;
+}
+
+.view_more summary:hover{
+    color: #fff;
 }
 
 
@@ -511,13 +518,13 @@ header img{
         height: auto;
     }
 
-    .home_page_text{
-        /* margin-bottom: 150px; */
-    }
+    /* .home_page_text{
+        margin-bottom: 150px;
+    } */
 
     .home_page_text h1{
          word-spacing: 10px;
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .home_page_text a{
@@ -551,9 +558,28 @@ header img{
 }
 
 .project_cards{
-    margin: 20px 10px;
+    margin: 20px 0px;
     /* padding: 10px; */
-    width: 360px;
+    width: 300px;
+}
+
+.project_cards img {
+    height: 150px;
+}
+
+.project_cards h4 {
+    font-size: 15px;
+}
+
+.project_cards a {
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.project_cards p {
+    font-size: 15px;
+    word-spacing: 10px;
+    margin-bottom: 20px;
 }
 
 .heading{
