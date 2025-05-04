@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+span{
+    color: #C778DD;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 20px 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 30px;
+    backdrop-filter: blur(11.3px);
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+}
+
+header ul li{
+    font-size: 15px;
+}
+
+header ul li a:hover{
+color: #fff;
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: all .4s ease ;
+     color: gray;
+}
+
+.call_none{
+    display: none;
+}
+
+.menu_projects{
+    color: #fff;
+    font-weight: 100;
+}
+
+
+.men_project_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 20px 0;
+}
+
+.project_cards{
+    border: 1px solid gray;
+    padding: 20px;
+    width: 500px;
+}
+
+.project_cards img{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    filter: grayscale(100%);
+    transition: all .4s ease;
+}
+
+.project_cards:hover img{
+    filter: grayscale(0%);
+    
+}
+
+.project_cards p{
+    font-size: 22px;
+    word-spacing: 12px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.project_cards h4{
+    color: #fff;
+    font-size: 25px;
+    word-spacing: 12px;
+}
+
+.project_cards a{
+        padding: 10px 40px;
+    font-size: 20px;
+    color: grey;
+    border: 1px solid #C778DD;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    transition: all .2s ease;
+}
+
+.project_cards a:hover{
+    color: #fff;
+}
+
+
+
+
+.wave-border {
+    height: 100px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 100px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.footer_icons {
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+    margin: 10px 10px;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 2px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.footer_icons:hover {
+    transform: scale(1.4);
+    color: #C778DD;
+        border: 2px solid #C778DD;
+
+}
+
+.mygmail {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.mygmail h4 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.mygmail a {
+    color: #C778DD;
+}
+
+
+@media screen and (max-width: 820px) {
+
+
+header{
+    padding: 10px 0;
+}
+
+header img{
+    height: 30px;
+}
+
+    header ul li {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.call_none{
+    display: block;
+}
+
+
+
+    footer ul {
+        margin-left: 5px;
+    }
+
+
+    .footer_icons {
+        margin: 2px;
+        font-size: 9px;
+        padding: 5px;
+        padding-bottom: 2px;
+        margin-left: 5px;
+    }
+
+        .wave-border {
+        height: 50px;
+        overflow: hidden;
+    }
+
+    footer {
+        height: 75px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <img src="./images/portfoli-desing.png" alt="LOGO">
+
+        <ul>
+            <li><a href="#"><span>#</span>HOME</a></li>
+            <li><a href="#about"><span>#</span>ABOUT</a></li>
+            <li><a href="#Contact"><span>#</span>CANTACT</a></li>
+            <li><a href="#skills"><span>#</span>SKILL'S</a></li>
+            <li><a class="menu_projects" href="#"><span>#</span>Projects</a></li>
+        </ul>
+        <a class="footer_icons call_none" href="tel:9990915354">
+                <ion-icon name="call-outline"></ion-icon>
+
+            </a>
+    </header>
+
+
+
+
+
+<div class="men_project_cards">
+    
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./projects images/ImgGenerator.png" alt="">
+        <p>A images search Engine/Generator Platform.</p>
+        <h4>ImgGenerator </h4>
+        <p>A simple website to search, view, and download HD images easily.</p>
+            <a href="https://saifskd.github.io/imgGenerator/">Visit ></a>
+    </div>
+
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./projects images/foodi.png" alt="">
+        <p>Foodi - Resturent Website (TailwindCss).</p>
+        <h4>FOODI</h4>
+        <p>This project aimed to explore Tailwind CSS and improve layout skills.</p>
+         <a href="https://saifskd.github.io/foodi/">Visit ></a>
+    </div>
+
+            <div data-aos="fade-up" class="project_cards">
+        <img src="./projects images/qr generator.png" alt="">
+        <p>Text to Qr-code Generator. </p>
+        <h4>QR Maker</h4>
+        <p>This project generates QR codes from input and boosted my JavaScript skills.</p>
+         <a href="https://saifskd.github.io/qr-generator/">Visit ></a>
+    </div>
+</div>
+
+
+<div class="men_project_cards">
+    
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./images/antjs.png" alt="">
+        <p>Web Animations for Developers</p>
+        <h4>AntJS </h4>
+        <p>easily integrate pre-built
+            animations into websites with a simple copy-paste.</p>
+            <a href="https://antjs.netlify.app/">Visit ></a>
+    </div>
+
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./images/save-fund.png" alt="">
+        <p>Available as a mobile APK</p>
+        <h4>SAVE FUND</h4>
+        <p>A custom affiliate marketing platform
+             for online shoppers</p>
+         <a href="https://saifskd.github.io/Save-Fund/">Visit ></a>
+    </div>
+
+            <div data-aos="fade-up" class="project_cards">
+        <img src="./images/bonsound.png" alt="">
+        <p>Enhances creativity & skill's </p>
+        <h4>Bonsound Website</h4>
+        <p>Built using Figma, Canva, HTML5, CSS, and
+JavaScript.</p>
+         <a href="https://saifskd.github.io/Bonsound/">Visit ></a>
+    </div>
+</div>
+
+        
+<div class="men_project_cards">
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./images/appoly21.png" alt="APPOLY">
+        <p>Demo website designed</p>
+        <h4>APPOLY Website </h4>
+        <p>Built as a creative
+prototype, it highlights clean layouts and visual aesthetics.</p>
+            <a href="https://saifskd.github.io/appolyweb/">Visit ></a>
+    </div>
+
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./images/fea.Certificate.png" alt="">
+        <p>Responsive websites</p>
+        <h4>FEA Certificate Generator</h4>
+        <p>Simply fill out the form to instantly
+create and download...</p>
+             <a href="https://saifskd.github.io/fea.certificate/">Visit ></a>
+    </div>
+
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./images/cars.png" alt="">
+        <p>Responsive websites</p>
+        <h4> Modern Cars</h4>
+        <p>A modern car showcase website designed for an enhanced mobile responsive design.</p>
+             <a href="https://saifskd.github.io/cars/">Visit ></a>
+    </div>
+</div>
+<div class="men_project_cards">
+        <div data-aos="fade-up" class="project_cards">
+        <img src="./projects images/weather.png" alt="">
+        <p>Weather Search Web App</p>
+        <h4>Weather Searcher</h4>
+        <p>This weather app fetches real-time data and enhanced my JavaScript skills.</p>
+             <a href="https://saifskd.github.io/weather/">Visit ></a>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wave-border top"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height:100%;width:100%">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke:none;fill: #2c2c2c;"></path>
+            <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+                style="stroke:var(--neon-color);fill:none"></path>
+        </svg></div>
+    <footer id="Contact_o">
+        <ul>
+            <a class="footer_icons" href="https://www.instagram.com/@secre.saif/">
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="https://twitter.com/shorts_sf44384?t=SI_DvAk9WkBYUmOyJSQN_A&s=08">
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="tel:8463922319">
+                <li><ion-icon name="call-outline"></ion-icon></li>
+
+            </a>
+            <a class="footer_icons" href="https://www.youtube.com/@secret.saif">
+                <li><ion-icon name="logo-youtube"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="https://saifskd.github.io/saif/">
+                <li><ion-icon name="globe-outline"></ion-icon></li>
+            </a>
+        </ul>
+        <div class="mygmail">
+            <h4>My Gmail</h4>
+            <a href="mailto:saifskd3@gmail.com">saifskd3@gmail.com</a>
+        </div>
+    </footer>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>l
