@@ -13,18 +13,17 @@
 <body>
     <header>
         <img src="./images/portfoli-desing.png" alt="LOGO">
-
-        <ul>
-            <li><a href="./index.html"><span>#</span>HOME</a></li>
-            <li><a href="./about.html"><span>#</span>ABOUT</a></li>
+        <ul class="menuList">
+            <li><a href="#"><span>#</span>HOME</a></li>
+             <li><a href="./about.html"><span>#</span>ABOUT</a></li>
             <li><a href="#Contact"><span>#</span>CANTACT</a></li>
             <li><a href="#skills"><span>#</span>SKILL'S</a></li>
             <li><a href="./projects.html"><span>#</span>Projects</a></li>
         </ul>
-        <a class="footer_icons call_none" href="tel:9990915354">
-                <ion-icon name="call-outline"></ion-icon>
+                 <a onclick="menuIcon()" class="menuicon">&#9776;</a>
 
-            </a>
+                 <a href="#Contact" class="contact_btn">CANTACT</a>
+
     </header>
     
     <div class="home_page">
@@ -39,7 +38,7 @@
 <p>He crafts responsive websites where technologies <br /> 
     meet creativity</p>
 
-<a href="./(saif) Professional Resume.pdf" download>Print Resume!!</a>
+<a href="./images/MD S.F Resume.pdf" download>Print Resume!!</a>
 
         </div>
 
@@ -272,7 +271,7 @@ In the long term, I aspire to combine my technical knowledge with entrepreneuria
        
 <div data-aos="zoom-in" class="contact_box">
     <h2>Message me here</h2>
-    <a href="tel:9990915354">9990915354</a>
+    <a href="tel:8463922319">8463922319</a>
 <a href="mailto:saifskd3@gmail.com">saifskd3@gmail.com</a>
 </div>
 
@@ -300,7 +299,7 @@ In the long term, I aspire to combine my technical knowledge with entrepreneuria
             <a class="footer_icons" href="https://twitter.com/shorts_sf44384?t=SI_DvAk9WkBYUmOyJSQN_A&s=08">
                 <li><ion-icon name="logo-twitter"></ion-icon></li>
             </a>
-            <a class="footer_icons" href="tel:9990915354">
+            <a class="footer_icons" href="tel:8463922319">
                 <li><ion-icon name="call-outline"></ion-icon></li>
 
             </a>
@@ -325,6 +324,7 @@ In the long term, I aspire to combine my technical knowledge with entrepreneuria
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
+
         var typed = new Typed('#typed', {
             strings: ["Programmer", "Developer", "Engineer", "Designer", "Application Developer", "Architect"],
             typespeed: 150,
@@ -333,6 +333,21 @@ In the long term, I aspire to combine my technical knowledge with entrepreneuria
         });
     </script>
 
+<script>
+let menuList = document.getElementsByClassName("menuList")[0];
+menuList.style.top = "-270px";
+
+function menuIcon() {
+    if (menuList.style.top == "-270px") {
+           menuList.style.top = "50px";
+
+
+    } else {
+menuList.style.top = "-270px";
+
+    }
+}
+</script>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
