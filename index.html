@@ -336,15 +336,19 @@ In the long term, I aspire to combine my technical knowledge with entrepreneuria
 
 <script>
 let menuList = document.getElementsByClassName("menuList")[0];
+    let menuicon = document.querySelector(".menuicon");
 menuList.style.top = "-270px";
 
 function menuIcon() {
     if (menuList.style.top == "-270px") {
            menuList.style.top = "50px";
+           menuicon.style.color = "#c778dd";
+        
 
 
     } else {
 menuList.style.top = "-270px";
+menuicon.style.color = "#fff";
 
     }
 }
@@ -361,6 +365,7 @@ menuList.style.top = "-270px";
 
 </body>
 </html>
+
 
 
 
