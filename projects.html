@@ -439,17 +439,45 @@ create and download...</p>
         </div>
     </footer>
 
-
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
+
+    <script>
+
+        var typed = new Typed('#typed', {
+            strings: ["Programmer", "Developer", "Engineer", "Designer", "Application Developer", "Architect"],
+            typespeed: 150,
+            backspeed: 150,
+            loop: true,
+        });
+    </script>
+
+<script>
+let menuList = document.getElementsByClassName("menuList")[0];
+menuList.style.top = "-270px";
+
+function menuIcon() {
+    if (menuList.style.top == "-270px") {
+           menuList.style.top = "50px";
+
+
+    } else {
+menuList.style.top = "-270px";
+
+    }
+}
+</script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
     </script>
    <script>
      AOS.init();
    </script>
+
 </body>
 </html>l
+
 
