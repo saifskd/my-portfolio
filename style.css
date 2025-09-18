@@ -768,13 +768,13 @@ width: 20%;
 
 
 
-body, html {
+/* body, html {
     position: relative;
     height: 100%;
     width: 100%;
     background-color: #222;
     overflow: hidden;
-}
+} */
 
 
 i{
@@ -796,4 +796,5 @@ i{
         transform: translate(var(--x), var(--y));
     }
 }
+
 
