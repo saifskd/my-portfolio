@@ -56,3 +56,28 @@ let getTrangzationValue = () => {
 
 document.addEventListener("mousemove", spark);
 
+
+
+
+// --------------------form sumition-------------------
+
+function submitDeta(){
+    let formInfo = {
+        name: document.querySelector("#form-name").value,
+        email: document.querySelector("#form-email").value,
+        number: document.querySelector("#form-number").value,
+        subject: document.querySelector("#form-subject").value,
+        message: document.querySelector("#form-message").value,
+    }
+
+    for (let i = 0; i < 1; i++) {
+        if (i < formInfo.name.length) {
+            emailjs.send("service_h55snre", "template_ho17jeq", formInfo).then(
+                alert("✅ Thank you! Your message has been sent successfully. I’ll get back to you soon.")
+            );
+        }
+    }
+
+}
+
+
