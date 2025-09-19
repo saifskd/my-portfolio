@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact S.F</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/my icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+        <header>
+        <img src="./images/my-logo.png" alt="LOGO">
+        <ul class="menuList">
+            <li><a href="#"><span>#</span>HOME</a></li>
+            <li><a href="./about.html"><span>#</span>ABOUT</a></li>
+            <li><a style="color: #fff;" href="#Contact"><span>#</span>CANTACT</a></li>
+            <li><a href="#skills"><span>#</span>SKILL'S</a></li>
+            <li><a href="./projects.html"><span>#</span>Projects</a></li>
+        </ul>
+        <a onclick="menuIcon()" class="menuicon">&#9776;</a>
+
+        <a href="#Contact" class="contact_btn">CANTACT</a>
+
+    </header>
+
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="100"
+        class="about_section">
+
+        <div id="Contact" class="about_text">
+            <div class="heading about_heading">
+                <h2><span>#</span>Contact-Me</h2>
+                <div class="deco_line"></div>
+                <!-- <p>View All =></p> -->
+            </div>
+
+            <div>
+                <h4> I’m interested in freelance opportunities. However, if you have other request or question, don’t
+                    hesitate to contact me </h4>
+            </div>
+
+        </div>
+
+        <div data-aos="zoom-in" class="contact_box">
+            <h2>Message me here</h2>
+            <a href="tel:9990915354">+91-9990915354</a>
+            <a href="mailto:saifskd3@gmail.com">saifskd3@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+
+    <div class="contact_heading">
+        <h2>Stay Connected with <img src="./my-logo.png" alt=""></h2>
+        <p>Let’s bridge the gap between ideas and execution! Whether you’re looking to collaborate, discuss a project, or simply say hello, I’d love to hear from you. Reach out today and let’s start building something meaningful together.</p>
+    </div>
+
+
+    <section class="contact_form" action="#">
+        <div class="form_main_section">
+                    <div class="form_sections">
+            <input id="form-name" class="form_text" name="name" type="text" placeholder="Enter Your Full Name here..." required>
+
+            <input id="form-email" class="form_text" name="email" type="email" placeholder="Enter Your Email Address..." required>
+        </div>
+        <div class="form_sections">
+            <input  id="form-number" class="form_text" name="Number" type="number" placeholder="Contact Number..." required>
+
+            <input  id="form-subject" class="form_text" name="subject" type="text" placeholder="Subject...">
+        </div>
+
+        <div>
+        <textarea  id="form-message" class="form_text message_box" name="Message" id="Message" placeholder="Message/Quetion..." required></textarea>
+        </div>
+
+        <button onclick="submitDeta()" class="submit_btn">Submit</button>
+        </div>
+    </section>
+
+
+
+
+
+        <footer id="Contact_o">
+        <ul>
+            <a class="footer_icons" href="https://www.instagram.com/_md_saif_78_/">
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="https://twitter.com/shorts_sf44384?t=SI_DvAk9WkBYUmOyJSQN_A&s=08">
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="tel:9990915354">
+                <li><ion-icon name="call-outline"></ion-icon></li>
+
+            </a>
+            <a class="footer_icons" href="https://www.youtube.com/@secret.saif">
+                <li><ion-icon name="logo-youtube"></ion-icon></li>
+            </a>
+            <a class="footer_icons" href="https://saifskd.github.io/saif/">
+                <li><ion-icon name="globe-outline"></ion-icon></li>
+            </a>
+        </ul>
+        <div class="mygmail">
+            <h4>My Gmail</h4>
+            <a href="mailto:saifskd3@gmail.com">saifskd3@gmail.com</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "W3OzxB769Y7PCxNBk",
+      });
+   })();
+</script>
+</body>
+</html>
